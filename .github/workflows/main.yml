@@ -1,34 +1,22 @@
-name: Build README with Pandoc
-
+name: Docs to PDF
+# This workflow is triggered on pushes to the repository.
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch:
-
+      - master
 jobs:
-  build:
+  converttopdf:
+    name: Build PDF
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Install Pandoc
-      run: sudo apt-get install -y pandoc
-
-    - name: Install wkhtmltopdf
-      run: sudo apt-get install -y wkhtmltopdf
-
-    - name: Convert README.md to PDF using wkhtmltopdf
-      run: pandoc README.md -o README.pdf --pdf-engine=wkhtmltopdf
-
-    # Optionally, upload the artifact (the generated PDF)
-    - name: Upload README.pdf
-      uses: actions/upload-artifact@v3
-      with:
-        name: README-pdf
-        path: README.pdf
+      - uses: actions/checkout@v2
+      - uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: ./
+          output_dir: ./
+          # Default is true, can set to false to only get PDF files
+          build_html: false
+      - uses: actions/upload-artifact@v1
+        with:
+          name: docs
+          path: ./
