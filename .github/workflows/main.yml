@@ -20,23 +20,15 @@ jobs:
     - name: Install Pandoc
       run: sudo apt-get install -y pandoc
 
-    - name: Install TeX Live (for pdflatex)
-      run: sudo apt-get install -y texlive-latex-base
+    - name: Install wkhtmltopdf
+      run: sudo apt-get install -y wkhtmltopdf
 
-    - name: Convert README.md to PDF using pdflatex
-      run: pandoc README.md -o README.pdf
-      
-    - name: Convert README.md to HTML
-      run: pandoc README.md -o README.html
+    - name: Convert README.md to PDF using wkhtmltopdf
+      run: pandoc README.md -o README.pdf --pdf-engine=wkhtmltopdf
 
+    # Optionally, upload the artifact (the generated PDF)
     - name: Upload README.pdf
       uses: actions/upload-artifact@v3
       with:
         name: README-pdf
         path: README.pdf
-
-    - name: Upload README.html
-      uses: actions/upload-artifact@v3
-      with:
-        name: README-html
-        path: README.html
