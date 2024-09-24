@@ -1,0 +1,11 @@
+name: Simple Usage
+
+on: push
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: docker://pandoc/core:2.9
+        with:
+          args: "README.md -o output.pdf -V geometry:margin=1in"
