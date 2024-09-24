@@ -92,7 +92,8 @@ Proto teď hledám práci, která mi umožní rozvíjet se v téhle oblasti a po
 - **Rust todo app with GUI** - [r1xvu0/rustdo-gui](https://github.com/r1xvu0/rustdo-gui)
 - **Python pastebin clone** - [r1xvu0/flask-pasty](https://github.com/r1xvu0/flask-pasty)
 - **Go pastebin TUI clone** - [r1xvu0/go-binify](https://github.com/r1xvu0/go-binify)
-- **Banana Clicker bot** - [ananascharles/banana-clicker](https://codeberg.org/AnanasCharles/Banana-AutoClicker)
+- **Python Banana Clicker bot** - [ananascharles/banana-clicker](https://codeberg.org/AnanasCharles/Banana-AutoClicker)
+- **C CrackMes.one authorization pin** - [r1xvu0/crackme-authorization_pin](https://github.com/r1xvu0/crackme-authorization_pin) / [crackmes.one](https://crackmes.one/crackme/6617d3a5cddae72ae250c556)
 
 ## Vzdělání
 
