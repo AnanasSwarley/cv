@@ -7,7 +7,7 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   build:
@@ -20,7 +20,10 @@ jobs:
     - name: Install Pandoc
       run: sudo apt-get install -y pandoc
 
-    - name: Convert README.md to PDF
+    - name: Install TeX Live (for pdflatex)
+      run: sudo apt-get install -y texlive-latex-base
+
+    - name: Convert README.md to PDF using pdflatex
       run: pandoc README.md -o README.pdf
       
     - name: Convert README.md to HTML
