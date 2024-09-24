@@ -10,7 +10,7 @@
 ## Motivace
 V průběhu mé dosavadní kariéry jsem měl možnost pracovat na různých softwarových projektech, včetně několika menších projektů, na kterých jsem pracoval ve svém volném čase. Tyto zkušenosti mě přivedly k tomu, že vývoj softwaru je oblast, která mě naplňuje a nabízí mi prostor pro neustálý osobní a profesní růst. I když jsem v předchozí roli získal mnoho cenných zkušeností, uvědomil jsem si, že se chci plně soustředit na softwarové inženýrství. 
 
-Proto nyní hledám pracovní příležitost, která mi umožní rozvíjet se v této oblasti a dále posouvat mé dovednosti.
+Proto teď hledám práci, která mi umožní rozvíjet se v téhle oblasti a posouvat své dovednosti dál. Jsem týmový hráč, který rád spolupracuje s ostatními na společných cílech. Rychle se učím a nemám problém se přizpůsobit novým úkolům nebo prostředí. Mám rád výzvy, protože mě motivují se zlepšovat a hledat nové nápady.
 
 ---
 
@@ -63,10 +63,10 @@ Proto nyní hledám pracovní příležitost, která mi umožní rozvíjet se v 
 
 - **Programovací Jazyky:**
   - **Python (Znalý):** `Flask`, `Django`, `FastAPI`, `PyQT`
+  - **JavaScript (Znalý):** `React`, `Node.js`, `Express`, `Next.js`
   - **Go (Začátečník):** `Gin`, `Gorilla`
   - **Rust (Začátečník):** `Rocket`, `Serde`, `Tokio`, `Tauri`
   - **Java (Začátečník):** `Spring`, `Hibernate`, `Maven`
-  - **JavaScript (Znalý):** `React`, `Node.js`, `Express`, `Next.js`
 
 - **Nástroje a Technologie:**
 
@@ -92,6 +92,7 @@ Proto nyní hledám pracovní příležitost, která mi umožní rozvíjet se v 
 - **Rust todo app with GUI** - [r1xvu0/rustdo-gui](https://github.com/r1xvu0/rustdo-gui)
 - **Python pastebin clone** - [r1xvu0/flask-pasty](https://github.com/r1xvu0/flask-pasty)
 - **Go pastebin TUI clone** - [r1xvu0/go-binify](https://github.com/r1xvu0/go-binify)
+- **Banana Clicker bot** - [ananascharles/banana-clicker](https://codeberg.org/AnanasCharles/Banana-AutoClicker)
 
 ## Vzdělání
 
