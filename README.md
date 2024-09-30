@@ -94,6 +94,7 @@ Proto teď hledám práci, která mi umožní rozvíjet se v téhle oblasti a po
 - **Go pastebin TUI clone** - [r1xvu0/go-binify](https://github.com/r1xvu0/go-binify)
 - **Python Banana Clicker bot** - [ananascharles/banana-clicker](https://codeberg.org/AnanasCharles/Banana-AutoClicker)
 - **C CrackMes.one authorization pin** - [r1xvu0/crackme-authorization_pin](https://github.com/r1xvu0/crackme-authorization_pin) / [crackmes.one](https://crackmes.one/crackme/6617d3a5cddae72ae250c556)
+- **Java Simple Todo API** - [r1xvu0/todo-spring](https://github.com/r1xvu0/todo-spring)
 
 ## Vzdělání
 
