@@ -22,15 +22,15 @@ jobs:
       with:
         node-version: '16'  # Specify Node.js version
 
-    - name: Install pandoc
+    - name: Install pandoc and wkhtmltopdf
       run: |
         sudo apt-get update
-        sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended
+        sudo apt-get install -y pandoc wkhtmltopdf
 
     - name: Convert README.md to PDF using pandoc
       run: |
         echo "Converting README.md to PDF..."
-        pandoc README.md -o README.pdf -V geometry:margin=2cm --pdf-engine=pdflatex
+        pandoc README.md -o README.pdf -V geometry:margin=2cm --pdf-engine=wkhtmltopdf
         echo "PDF conversion completed"
 
         # Verify PDF was created
