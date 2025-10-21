@@ -16,7 +16,7 @@ Proto teď hledám práci, která mi umožní rozvíjet se v téhle oblasti a po
 
 ## Pracovní Zkušenosti
 
-### IT Technik pro vlakovou palubní techniku (2025 - 2025)
+### IT Technik pro vlakovou palubní techniku - RegioJet (2025 - 2025)
 
 **Technologie:**
 
