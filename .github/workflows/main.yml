@@ -27,24 +27,38 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y pandoc wkhtmltopdf
 
-    - name: Convert README.md to PDF using pandoc
+    - name: Convert README files to PDF using pandoc
       run: |
         echo "Converting README.md to PDF..."
         pandoc README.md -o README.pdf -V geometry:margin=2cm --pdf-engine=wkhtmltopdf
-        echo "PDF conversion completed"
+        echo "README.md conversion completed"
 
-        # Verify PDF was created
+        echo "Converting README_EN.md to PDF..."
+        pandoc README_EN.md -o README_EN.pdf -V geometry:margin=2cm --pdf-engine=wkhtmltopdf
+        echo "README_EN.md conversion completed"
+
+        # Verify PDFs were created
         if [ -f "README.pdf" ]; then
-          echo "PDF file created successfully"
+          echo "README.pdf created successfully"
           ls -la README.pdf
         else
-          echo "Error: PDF file was not created"
+          echo "Error: README.pdf was not created"
           exit 1
         fi
 
-    # Optionally, upload the artifact (the generated PDF)
-    - name: Upload README.pdf
+        if [ -f "README_EN.pdf" ]; then
+          echo "README_EN.pdf created successfully"
+          ls -la README_EN.pdf
+        else
+          echo "Error: README_EN.pdf was not created"
+          exit 1
+        fi
+
+    # Upload both PDF artifacts
+    - name: Upload PDF files
       uses: actions/upload-artifact@v4
       with:
-        name: README-pdf
-        path: README.pdf
+        name: readme-pdfs
+        path: |
+          README.pdf
+          README_EN.pdf
