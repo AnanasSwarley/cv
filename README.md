@@ -16,6 +16,54 @@ Proto teď hledám práci, která mi umožní rozvíjet se v téhle oblasti a po
 
 ## Pracovní Zkušenosti
 
+### IT Technik pro vlakovou palubní techniku (2025 - 2025)
+
+**Technologie:**
+
+- `bash`
+- `python`
+- `Go`
+- `React`
+- `PostgreSQL`
+- `Docker`
+- `K8s`
+- `Zabbix`
+- `Grafana`
+- `JIRA`
+
+**Klíčové přínosy:**
+
+- Vyvíjel jsem interní nástroje pro sledování příjezdu vlaků na depo.
+
+- Propojil jsem systém JIRA s interními aplikacemi pro lepší přehled o probíhající práci.
+
+- Aktivně jsem zpracovával a uzavíral JIRA tikety.
+
+- Podílel jsem se na opravách a diagnostice palubní techniky (DataRaily, Access Pointy, palubní počítače, rozdělovače a další).
+
+- Připravoval jsem technické vybavení pro vlakové posádky (mobilní telefony, tablety, platební terminály PAX).
+
+**Zodpovědnosti:**
+
+- Údržba, konfigurace a nasazování palubních zařízení v síti.
+
+- Spolupráce s IT týmem na vývoji interních nástrojů a skriptů pro automatizaci.
+
+- Práce s monitorovacími systémy (Zabbix, Grafana) a správa alertů.
+
+- Používání Docker a Kubernetes pro testování a nasazování interních aplikací.
+
+- Řešení a dokumentace technických problémů prostřednictvím JIRA.
+
+**Učení a rozvoj:**
+
+- Prohloubil jsem své znalosti v oblasti infrastruktury, síťové diagnostiky a DevOps nástrojů.
+
+- Získal jsem zkušenosti s integrací systémů pro monitoring a správu infrastruktury (Zabbix, Grafana).
+
+- Zdokonalil jsem své dovednosti v Go, Pythonu a Reactu při tvorbě interních nástrojů.
+
+
 ### Zvukový inženýr / Programátor - Dopravní podnik hl. m. Prahy (2019 - 2024)
 
 **Technologie:**

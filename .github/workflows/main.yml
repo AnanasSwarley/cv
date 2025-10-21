@@ -30,7 +30,7 @@ jobs:
 
     # Optionally, upload the artifact (the generated PDF)
     - name: Upload README.pdf
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: README-pdf
         path: README.pdf
