@@ -1,4 +1,4 @@
-name: Build README with markdown-pdf
+name: Build README PDF
 
 on:
   push:
@@ -22,62 +22,25 @@ jobs:
       with:
         node-version: '16'  # Specify Node.js version
 
-    - name: Install dependencies
-      run: npm install puppeteer markdown-it
-
-    - name: Convert README.md to PDF using puppeteer
+    - name: Install pandoc
       run: |
-        node -e "
-        const puppeteer = require('puppeteer');
-        const fs = require('fs');
-        const markdownit = require('markdown-it');
-        const md = markdownit();
+        sudo apt-get update
+        sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended
 
-        async function convert() {
-          console.log('Starting PDF conversion...');
+    - name: Convert README.md to PDF using pandoc
+      run: |
+        echo "Converting README.md to PDF..."
+        pandoc README.md -o README.pdf -V geometry:margin=2cm --pdf-engine=pdflatex
+        echo "PDF conversion completed"
 
-          // Check if README.md exists
-          if (!fs.existsSync('README.md')) {
-            throw new Error('README.md not found');
-          }
-
-          const markdown = fs.readFileSync('README.md', 'utf8');
-          console.log('README.md loaded, length:', markdown.length);
-
-          const html = md.render(markdown);
-          console.log('HTML rendered, length:', html.length);
-
-          const browser = await puppeteer.launch({
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
-          });
-
-          const page = await browser.newPage();
-          await page.setContent(html, { waitUntil: 'networkidle2' });
-
-          await page.pdf({
-            path: 'README.pdf',
-            format: 'A4',
-            printBackground: true,
-            margin: { top: '2cm', right: '2cm', bottom: '2cm', left: '2cm' }
-          });
-
-          await browser.close();
-          console.log('PDF created successfully');
-
-          // Verify file exists
-          if (fs.existsSync('README.pdf')) {
-            const stats = fs.statSync('README.pdf');
-            console.log('PDF file size:', stats.size, 'bytes');
-          } else {
-            throw new Error('PDF file was not created');
-          }
-        }
-
-        convert().catch(err => {
-          console.error('Error:', err);
-          process.exit(1);
-        });
-        "
+        # Verify PDF was created
+        if [ -f "README.pdf" ]; then
+          echo "PDF file created successfully"
+          ls -la README.pdf
+        else
+          echo "Error: PDF file was not created"
+          exit 1
+        fi
 
     # Optionally, upload the artifact (the generated PDF)
     - name: Upload README.pdf
