@@ -2,19 +2,92 @@
 # Jan Sluka
 - Email: [jsluka94@gmail.com](mailto:jsluka94@gmail.com)
 - Telefon: +420 602 399 313
-- Věk: 29 let
+- Věk: 31 let
 - Adresa: Cidlinská 1175, Praha 9
 
 ---
 
 ## Motivace
-V průběhu mé dosavadní kariéry jsem měl možnost pracovat na různých softwarových projektech, včetně několika menších projektů, na kterých jsem pracoval ve svém volném čase. Tyto zkušenosti mě přivedly k tomu, že vývoj softwaru je oblast, která mě naplňuje a nabízí mi prostor pro neustálý osobní a profesní růst. I když jsem v předchozí roli získal mnoho cenných zkušeností, uvědomil jsem si, že se chci plně soustředit na softwarové inženýrství. 
+V průběhu mé dosavadní kariéry jsem měl možnost pracovat na různých softwarových projektech, včetně několika menších projektů, na kterých jsem pracoval ve svém volném čase, a také prakticky spravovat produkční infrastrukturu. Tyto zkušenosti mi ukázaly, že jsem nejvíce ve svém živlu, když je softwarové inženýrství propojené s celkovým přehledem o infrastruktuře, na které mé aplikace běží.
 
-Proto teď hledám práci, která mi umožní rozvíjet se v téhle oblasti a posouvat své dovednosti dál. Jsem týmový hráč, který rád spolupracuje s ostatními na společných cílech. Rychle se učím a nemám problém se přizpůsobit novým úkolům nebo prostředí. Mám rád výzvy, protože mě motivují se zlepšovat a hledat nové nápady.
+Proto teď hledám práci, která mi umožní spojit softwarové inženýrství se širokým přehledem o infrastruktuře a posouvat své dovednosti dál. Jsem týmový hráč, který rád spolupracuje s ostatními na společných cílech. Rychle se učím a nemám problém se přizpůsobit novým úkolům nebo prostředí. Mám rád výzvy, protože mě motivují se zlepšovat a hledat nové nápady.
 
 ---
 
 ## Pracovní Zkušenosti
+
+### Inženýr IT infrastruktury - IceWarp (2026 - současnost)
+
+**Technologie:**
+
+- `ProxySQL`
+- `MySQL`
+- `KeyDB`
+- `HAProxy`
+- `Keepalived`
+- `Zabbix`
+- `Percona Monitoring and Management`
+- `Linux`
+- `bash`
+- `Python`
+- `Go`
+- `nginx`
+- `php-fpm`
+- `iptables`
+- `Orchestrator`
+- `DigitalOcean`
+
+**Klíčové přínosy:**
+
+- Zajišťoval jsem spolehlivý provoz zákaznických VPS a kritických komponent infrastruktury, aby produkční služby zůstávaly funkční a dostupné.
+
+- Spravoval a výkonnostně ladil jsem databázovou infrastrukturu postavenou na ProxySQL a MySQL, včetně směrování dotazů, replikace a vysoké dostupnosti.
+
+- Provozoval jsem replikační topologii MySQL (jeden master a dvě repliky) řízenou nástrojem Orchestrator pro automatický failover a správu topologie.
+
+- Spravoval jsem in-memory úložiště KeyDB (kompatibilní s Redis) pro caching a rychlý přístup ke key-value datům.
+
+- Vytvářel a udržoval jsem monitoring pomocí Zabbixu (vlastní items a triggery) a Percona Monitoring and Management (PMM) pro proaktivní odhalování problémů databází a infrastruktury.
+
+- Provozoval jsem load balancing a failover pomocí HAProxy a Keepalived (VRRP) pro zajištění vysoké dostupnosti služeb.
+
+- Plánoval a prováděl jsem migrace infrastruktury a databází s minimálním výpadkem.
+
+- Spravoval jsem virtualizační hostitele (hypervizory) provozující zákaznické i interní zátěže.
+
+- Spravoval jsem zákaznické weby hostované na DigitalOcean na nginx a PHP-FPM, včetně vydávání a obnovy TLS/SSL certifikátů.
+
+- Konfiguroval a udržoval jsem firewall na hostech pomocí iptables.
+
+- Vyvíjel jsem vlastní interní nástroje, které zlepšovaly provozní workflow a omezovaly manuální práci.
+
+- Podílel jsem se na odlehčené platformě pro správu incidentů sloužící ke sledování a řešení incidentů v infrastruktuře.
+
+**Zodpovědnosti:**
+
+- Každodenní správa, monitoring a řešení problémů zákaznických VPS a kritické infrastruktury.
+
+- Údržba vysoce dostupných databázových a load-balancing stacků (ProxySQL, MySQL, KeyDB, HAProxy, Keepalived, Orchestrator).
+
+- Monitoring a alerting přes Zabbix (items, triggery, šablony) a PMM, včetně dashboardů a ladění prahových hodnot.
+
+- Plánování a realizace migrací mezi servery, hypervizory a databázovými backendy.
+
+- Reakce na incidenty a analýza příčin (root-cause analysis) u produkčních problémů.
+
+- 24/7 on-call pohotovost v týdenních turnusech (přibližně dvakrát měsíčně), reakce na vzniklé incidenty a poskytování eskalační podpory týmu podpory (Support).
+
+- Vývoj a údržba automatizačních skriptů a interních nástrojů.
+
+**Učení a rozvoj:**
+
+- Prohloubil jsem své znalosti v oblasti databázových operací, výkonnostního ladění, replikace, cachingu a vysoké dostupnosti (ProxySQL, MySQL, KeyDB, Orchestrator).
+
+- Získal jsem praktické zkušenosti s load balancingem, failoverem a virtualizací.
+
+- Vybudoval jsem si praktické dovednosti v monitoringu a alertingu se Zabbixem (items a triggery) a Percona PMM.
+
+- Posílil jsem své dovednosti v oblasti reakce na incidenty, řešení problémů a automatizace infrastruktury.
 
 ### IT Technik pro vlakovou palubní techniku - RegioJet (2025 - 2025)
 
@@ -120,6 +193,14 @@ Proto teď hledám práci, která mi umožní rozvíjet se v téhle oblasti a po
 
   - **Docker (Znalý):** `Docker Compose`
   - **PostgreSQL (Znalý):** `pgAdmin`, `SQLAlchemy`
+  - **MySQL (Znalý):** `ProxySQL`, `Replikace`, `Orchestrator`, `PMM`, `Performance Tuning`
+  - **KeyDB / Redis (Znalý):** `Caching`, `Key-Value Store`
+  - **Load Balancing (Znalý):** `HAProxy`, `Keepalived`
+  - **Virtualizace (Znalý):** `Hypervizory`
+  - **Web (Znalý):** `nginx`, `PHP-FPM`, `TLS/SSL`
+  - **Networking (Znalý):** `iptables`
+  - **Cloud (Znalý):** `DigitalOcean`
+  - **Monitoring (Znalý):** `Zabbix`, `Percona PMM`
   - **Linux (Znalý):** `bash`, `Systemd`, `Cron`
   - **Kubernetes (Začátečník):** `Deployments`, `Pods`, `Services`
   - **Grafana (Začátečník):** `Dashboards`, `Data Visualization`

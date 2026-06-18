@@ -1,19 +1,92 @@
 # Jan Sluka
 - Email: [jsluka94@gmail.com](mailto:jsluka94@gmail.com)
 - Phone: +420 602 399 313
-- Age: 29 years
+- Age: 31 years
 - Address: Cidlinská 1175, Prague 9
 
 ---
 
 ## Motivation
-Throughout my career so far, I have had the opportunity to work on various software projects, including several smaller projects that I worked on in my free time. These experiences have led me to realize that software development is a field that fulfills me and offers me space for continuous personal and professional growth. Although I gained many valuable experiences in my previous role, I realized that I want to fully focus on software engineering.
+Throughout my career so far, I have had the opportunity to work on various software projects, including several smaller projects that I worked on in my free time, as well as hands-on work running production infrastructure. These experiences have shown me that I am at my best when software engineering is paired with a full overview of the underlying infrastructure — understanding how the systems my code runs on actually behave.
 
-Therefore, I am now looking for a job that will allow me to develop in this area and push my skills further. I am a team player who enjoys collaborating with others on common goals. I learn quickly and have no problem adapting to new tasks or environments. I like challenges because they motivate me to improve and find new ideas.
+Therefore, I am now looking for a role that lets me combine software engineering with a broad infrastructure perspective and push my skills further. I am a team player who enjoys collaborating with others on common goals. I learn quickly and have no problem adapting to new tasks or environments. I like challenges because they motivate me to improve and find new ideas.
 
 ---
 
 ## Work Experience
+
+### IT Infrastructure Engineer - IceWarp (2026 - present)
+
+**Technologies:**
+
+- `ProxySQL`
+- `MySQL`
+- `HAProxy`
+- `Keepalived`
+- `Linux`
+- `bash`
+- `Python`
+- `Go`
+- `KeyDB`
+- `Zabbix`
+- `Percona Monitoring and Management`
+- `nginx`
+- `php-fpm`
+- `iptables`
+- `Orchestrator`
+- `DigitalOcean`
+
+**Key Contributions:**
+
+- I ensured the reliable operation of customer VPS instances and critical infrastructure components, keeping production services healthy and available.
+
+- I administered and performance-tuned database infrastructure built on ProxySQL and MySQL, including query routing, replication and high-availability setups.
+
+- I ran a MySQL replication topology (one master with two replicas) orchestrated with Orchestrator for automated failover and topology management.
+
+- I administered KeyDB (Redis-compatible) in-memory data stores used for caching and fast key-value access.
+
+- I built and maintained monitoring with Zabbix (custom items and triggers) and Percona Monitoring and Management (PMM) for proactive detection of database and infrastructure issues.
+
+- I operated load balancing and failover stacks using HAProxy and Keepalived (VRRP) to keep services highly available.
+
+- I planned and carried out infrastructure and database migrations with minimal downtime.
+
+- I managed virtualization hosts (hypervisors) running customer and internal workloads.
+
+- I maintained DigitalOcean-hosted customer websites on nginx and PHP-FPM, including TLS/SSL certificate issuance and renewal.
+
+- I configured and maintained host firewalling with iptables.
+
+- I developed custom internal tools that improved operational workflows and reduced manual work.
+
+- I contributed to a lightweight incident management platform for tracking and resolving infrastructure incidents.
+
+**Responsibilities:**
+
+- Day-to-day administration, monitoring and troubleshooting of customer VPS and critical infrastructure.
+
+- Maintenance of high-availability database and load-balancing stacks (ProxySQL, MySQL, KeyDB, HAProxy, Keepalived, Orchestrator).
+
+- Monitoring and alerting via Zabbix (items, triggers, templates) and PMM, including dashboards and threshold tuning.
+
+- Planning and execution of migrations between servers, hypervisors and database backends.
+
+- Incident response and root-cause analysis for production issues.
+
+- 24/7 on-call duty on a weekly rotation (around twice a month), responding to incidents as they arose and providing escalation support to the Support team.
+
+- Development and maintenance of automation scripts and internal tooling.
+
+**Learning and Development:**
+
+- I deepened my expertise in database operations, performance tuning, replication, caching and high availability (ProxySQL, MySQL, KeyDB, Orchestrator).
+
+- I gained hands-on experience with load balancing, failover and virtualization.
+
+- I built practical monitoring and alerting skills with Zabbix (items and triggers) and Percona PMM.
+
+- I strengthened my incident response, troubleshooting and infrastructure automation skills.
 
 ### IT Technician for Train Onboard Technology - RegioJet (2025 - 2025)
 
@@ -117,6 +190,14 @@ Therefore, I am now looking for a job that will allow me to develop in this area
 
   - **Docker (Proficient):** `Docker Compose`
   - **PostgreSQL (Proficient):** `pgAdmin`, `SQLAlchemy`
+  - **MySQL (Proficient):** `ProxySQL`, `Replication`, `Orchestrator`, `PMM`, `Performance Tuning`
+  - **KeyDB / Redis (Proficient):** `Caching`, `Key-Value Store`
+  - **Monitoring (Proficient):** `Zabbix`, `Percona PMM`
+  - **Load Balancing (Proficient):** `HAProxy`, `Keepalived`
+  - **Virtualization (Proficient):** `Hypervisors`
+  - **Web (Proficient):** `nginx`, `PHP-FPM`, `TLS/SSL`
+  - **Networking (Proficient):** `iptables`
+  - **Cloud (Proficient):** `DigitalOcean`
   - **Linux (Proficient):** `bash`, `Systemd`, `Cron`
   - **Kubernetes (Beginner):** `Deployments`, `Pods`, `Services`
   - **Grafana (Beginner):** `Dashboards`, `Data Visualization`
